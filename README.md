@@ -43,4 +43,5 @@ The best way to make changes is to modify the CSS Stylesheet.  Please don't chan
 
 ## Example
 
+![alt tag](https://github.com/iankloo/dscoemarkdown/blob/master/dscoe_styling.png)
 
