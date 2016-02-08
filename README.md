@@ -4,6 +4,10 @@ This package was created for DSCOE products in order to unify formatting.  The f
 
 Using this package, you can extend knitr to automatically use the DSCOE format.
 
+##Known Issue
+
+The DSCOE logo looks grainy when an html document is viewed in the R Studio viewer.  This issue is resolved if you use a regular browser, or even click "open in browser" after knitting the document.
+
 ## Usage
 
 You can install this package using the devtools github installer:
