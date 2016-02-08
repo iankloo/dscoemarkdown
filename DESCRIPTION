@@ -1,0 +1,8 @@
+Package: dscoemarkdown
+Title: Create documents with standard DSCOE format.	
+Version: 0.0.0.9000
+Authors@R: person("Ian", "Kloo", email = "iankloo@gmail.com", role = c("aut", "cre"))
+Description: This package extends knitr to include a new template with the DSCOE logo/formatting.  This is an extension of the Bulma framework and the concept was borrowed from @hrbrmstr's post on R-bloggers and github repo for the package markdowntemplates.
+Depends: R (>= 3.1.2)
+License: MIT + file LICENSE
+LazyData: true
