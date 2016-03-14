@@ -3,6 +3,15 @@ p {
   margin-bottom: 0.75rem;
 }
 
+ol{
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+
+a{
+  color: blue;
+}
+
 .authordate {
   border-top:1px solid #69707a;
   border-bottom:1px solid #69707a;
