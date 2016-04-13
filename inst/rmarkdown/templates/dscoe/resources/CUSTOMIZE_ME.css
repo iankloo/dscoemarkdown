@@ -101,15 +101,6 @@ h4 {
   color:#69707a;
 }
 
-
-.header {
-background: url(logo.png) no-repeat;
-height: 100px;
-width: auto;
-background-size:contain;
-box-shadow: none;
-}
-
 #disclaimer {
   font: normal normal 13px Arial;
   font-size: 16px;
