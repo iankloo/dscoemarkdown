@@ -16,9 +16,9 @@ dscoe <- function(logo=TRUE, disclaimer=TRUE) {
   }
   
   if(logo == TRUE){
-    css <- paste(system,'style/dscoemarkdownLogo.css',sep='')
+    css <- paste(system,'style/dscoeMarkdownLogo.css',sep='')
   } else if(logo == FALSE){
-    css <- paste(system,'style/dscoemarkdownNoLogo.css',sep='')
+    css <- paste(system,'style/dscoeMarkdownNoLogo.css',sep='')
   }
   
   rmarkdown::html_document(css=css, includes=rmarkdown::includes(after_body=footer))
