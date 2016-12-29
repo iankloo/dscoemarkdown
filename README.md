@@ -13,6 +13,13 @@ require(devtools)
 devtools::install_github("iankloo/dscoemarkdown")
 ```
 
+***There is a known issue with linux users.  Until I can get a more elgant fix, you can use the following lines to install the package on linux:
+
+```{r}
+require(devtools)
+devtools::install_github("iankloo/dscoemarkdown", ref = 'linux')
+```
+
 If that goes smoothly, you can now include this line in the header of your R Markdown Documents:
 
 ```{r}
