@@ -1,14 +1,16 @@
 Package: dscoemarkdown
 Title: R Markdown for DSCOE Submissions
-Version: 0.0.0.9000
+Version: 0.0.1.0
 Authors@R: person("Ian", "Kloo", email = "ian.p.kloo.civ@mail.mil", role = c("aut", "cre"))
 Description: Create R Markdown documents in the prefered format for the DSCOE
     website.
 Depends:
-    R (>= 2.0.0)
+    R (>= 3.5.0)
 License: None
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 5.0.1
+RoxygenNote: 7.1.0
 Imports: knitr,
     rmarkdown
+VignetteBuilder: knitr
+
