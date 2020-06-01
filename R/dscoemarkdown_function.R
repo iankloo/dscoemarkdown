@@ -45,15 +45,15 @@ dscoe <- function(logo=TRUE, disclaimer=TRUE) {
   } else if (.Platform$OS.type == "unix") {
 
     if(disclaimer == TRUE){
-      footer <- paste(system,'inst/disclaimer.html',sep='')
+      footer <- paste(system,'style/disclaimer.html',sep='')
     } else if(disclaimer == FALSE){
-      footer <- paste(system,'inst/noDisclaimer.html',sep='')
+      footer <- paste(system,'style/noDisclaimer.html',sep='')
     }
 
     if(logo == TRUE){
-      css <- paste(system,'inst/dscoeMarkdownLogo.css',sep='')
+      css <- paste(system,'style/dscoeMarkdownLogo.css',sep='')
     } else if(logo == FALSE){
-      css <- paste(system,'inst/dscoeMarkdownNoLogo.css',sep='')
+      css <- paste(system,'style/dscoeMarkdownNoLogo.css',sep='')
     }
 
   }
