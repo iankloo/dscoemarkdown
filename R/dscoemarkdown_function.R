@@ -28,17 +28,37 @@
 dscoe <- function(logo=TRUE, disclaimer=TRUE) {
   system <- system.file('',package='dscoemarkdown')
 
-  if(disclaimer == TRUE){
-    footer <- paste(system,'./inst/disclaimer.html',sep='')
-  } else if(disclaimer == FALSE){
-    footer <- paste(system,'./inst/noDisclaimer.html',sep='')
+  if(.Platform$OS.type == 'windows'){
+
+    if(disclaimer == TRUE){
+      footer <- paste(system,'/style/disclaimer.html',sep='')
+    } else if(disclaimer == FALSE){
+      footer <- paste(system,'/style/noDisclaimer.html',sep='')
+    }
+
+    if(logo == TRUE){
+      css <- paste(system,'/style/dscoemarkdownLogo.css',sep='')
+    } else if(logo == FALSE){
+      css <- paste(system,'/style/dscoemarkdownNoLogo.css',sep='')
+    }
+
+  } else if (.Platform$OS.type == "unix") {
+
+    if(disclaimer == TRUE){
+      footer <- paste(system,'inst/disclaimer.html',sep='')
+    } else if(disclaimer == FALSE){
+      footer <- paste(system,'inst/noDisclaimer.html',sep='')
+    }
+
+    if(logo == TRUE){
+      css <- paste(system,'inst/dscoeMarkdownLogo.css',sep='')
+    } else if(logo == FALSE){
+      css <- paste(system,'inst/dscoeMarkdownNoLogo.css',sep='')
+    }
+
   }
 
-  if(logo == TRUE){
-    css <- paste(system,'./inst/dscoemarkdownLogo.css',sep='')
-  } else if(logo == FALSE){
-    css <- paste(system,'./inst/dscoemarkdownNoLogo.css',sep='')
-  }
+
 
   rmarkdown::html_document(css=css, includes=rmarkdown::includes(after_body=footer))
 
