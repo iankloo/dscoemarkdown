@@ -1,3 +1,23 @@
+---
+title: "DSCOE-Markdown"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{DSCOE-Markdown}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(dscoemarkdown)
+```
+
 # DSCOE Markdown Package
 
 This package was created for DSCOE products in order to unify formatting.
@@ -8,20 +28,20 @@ Using this package, you can extend knitr to automatically use the DSCOE format.
 
 You can install this package using the devtools github installer:
 
-```{r}
+```{r eval=FALSE}
 require(devtools)
 devtools::install_github("iankloo/dscoemarkdown")
 ```
 
 If that goes smoothly, you can now include this line in the header of your R Markdown Documents:
 
-```{r}
+```{r eval=FALSE}
 output: dscoemarkdown::dscoe
 ```
 
 An example full header is:
 
-```{r}
+```{r eval=FALSE}
 ---
 title: "Demo Header"
 author: "Ian Kloo"
@@ -42,7 +62,7 @@ You have the option to remove the DSCOE logo and/or the disclaimer.  We ask that
 
 By default, both the logo and disclaimer are included.  To change this you can specify options like this:
 
-```{r}
+```{r eval=FALSE}
 ---
 title: "DSCOE Markdown Example"
 author: "Ian Kloo"
@@ -60,5 +80,4 @@ As it stands, the styling in this package is very basic.  If you want to propose
 
 ## Example
 
-![alt tag](./inst/dscoeMarkdownExample.png)
-
+![alt tag](../inst/dscoeMarkdownExample.png)

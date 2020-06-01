@@ -2,11 +2,34 @@
 % Please edit documentation in R/dscoemarkdown_function.R
 \name{dscoe}
 \alias{dscoe}
-\title{Run Markdown}
+\title{Generate DSCOE markdown}
 \usage{
-dscoe()
+dscoe(logo = TRUE, disclaimer = TRUE)
+}
+\arguments{
+\item{logo}{a boolean representing whether or not to inclue the DSCOE logo}
+
+\item{disclaimer}{a boolean representing whether or not to include the disclaimer footer}
 }
 \description{
-Run Markdown
+Apply css and footer and build a DSCOE formatted markdown document
 }
+\examples{
+---
+#title: "Demo Header"
+#author: "Ian Kloo"
+#date: "September 2016"
+#output: dscoemarkdown::dscoe
+---
 
+---
+#title: "Demo Header"
+#author: "Ian Kloo"
+#date: "September 2016"
+#output:
+ #  dscoemarkdown::dscoe:
+ #  logo: FALSE
+ #  disclaimer: FALSE
+---
+
+}
